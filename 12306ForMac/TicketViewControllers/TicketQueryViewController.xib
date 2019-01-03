@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
-        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
-        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TicketQueryViewController" customModule="iTrain" customModuleProvider="target">
@@ -48,7 +47,7 @@
                 <constraint firstAttribute="trailing" secondItem="Q3P-1n-q0W" secondAttribute="trailing" id="XVI-y2-Iv4"/>
             </constraints>
         </view>
-        <customView id="Pvh-ix-iH6" customClass="GlassView" customModule="iTrain" customModuleProvider="target">
+        <customView appearanceType="aqua" id="Pvh-ix-iH6" customClass="GlassView" customModule="iTrain" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="910" height="530"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
@@ -58,7 +57,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="886" height="530"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="40" headerView="mkA-fg-IPp" viewBased="YES" id="vdR-Hc-SYr">
+                            <tableView verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="40" headerView="mkA-fg-IPp" viewBased="YES" id="vdR-Hc-SYr">
                                 <rect key="frame" x="0.0" y="0.0" width="886" height="507"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
@@ -489,11 +488,11 @@
             </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="364.5" y="1306"/>
         </customView>
-        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Pal-9i-ZzT" customClass="GlassView" customModule="iTrain" customModuleProvider="target">
+        <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="Pal-9i-ZzT" customClass="GlassView" customModule="iTrain" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="910" height="40"/>
             <subviews>
                 <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Be8-M1-vtw" customClass="ClickableDatePicker" customModule="iTrain" customModuleProvider="target">
-                    <rect key="frame" x="563" y="1.5" width="90" height="23"/>
+                    <rect key="frame" x="563" y="2" width="90" height="23"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="23" id="8Aa-Zv-hKL"/>
                         <constraint firstAttribute="width" constant="90" id="Vo0-fD-7UT"/>
@@ -511,14 +510,14 @@
                     </connections>
                 </datePicker>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4jY-s2-8Ni" customClass="AutoCompleteTextField" customModule="iTrain" customModuleProvider="target">
-                    <rect key="frame" x="95" y="1.5" width="80" height="23"/>
+                    <rect key="frame" x="95" y="2" width="80" height="23"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="23" id="5RR-3h-LZM"/>
                         <constraint firstAttribute="width" constant="80" id="t04-b6-cBp"/>
                     </constraints>
                     <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" title="深圳" drawsBackground="YES" id="SVV-gq-zxE">
                         <font key="font" metaFont="systemThin" size="13"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <allowedInputSourceLocales>
                             <string>NSAllRomanInputSourcesLocaleIdentifier</string>
@@ -531,14 +530,14 @@
                     </userDefinedRuntimeAttributes>
                 </textField>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l4y-Hd-FVf" customClass="AutoCompleteTextField" customModule="iTrain" customModuleProvider="target">
-                    <rect key="frame" x="318" y="1.5" width="80" height="23"/>
+                    <rect key="frame" x="318" y="2" width="80" height="23"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="23" id="C6k-54-5Fp"/>
                         <constraint firstAttribute="width" constant="80" id="fmb-qp-YPt"/>
                     </constraints>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="衡阳" drawsBackground="YES" id="5fr-rF-LNE">
                         <font key="font" metaFont="systemThin" size="13"/>
-                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <allowedInputSourceLocales>
                             <string>NSAllRomanInputSourcesLocaleIdentifier</string>
@@ -597,7 +596,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQQ-8z-kIM">
-                    <rect key="frame" x="180" y="5.5" width="50" height="16"/>
+                    <rect key="frame" x="180" y="5" width="50" height="16"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="IuX-gs-s4I"/>
                         <constraint firstAttribute="height" constant="16" id="z5f-YW-eTw"/>
@@ -622,7 +621,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MUa-ek-GSq">
-                    <rect key="frame" x="406" y="7.5" width="11" height="11"/>
+                    <rect key="frame" x="406" y="8" width="11" height="11"/>
                     <buttonCell key="cell" type="square" title="Button" bezelStyle="shadowlessSquare" image="NSAddTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="oix-7Y-rB4">
                         <behavior key="behavior" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
@@ -662,11 +661,11 @@
             </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="170" y="855"/>
         </customView>
-        <customView translatesAutoresizingMaskIntoConstraints="NO" id="Dhy-j5-W4F" customClass="GlassView" customModule="iTrain" customModuleProvider="target">
+        <customView appearanceType="aqua" translatesAutoresizingMaskIntoConstraints="NO" id="Dhy-j5-W4F" customClass="GlassView" customModule="iTrain" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="910" height="40"/>
             <subviews>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mmx-jz-xkG" customClass="LoginButton" customModule="iTrain" customModuleProvider="target">
-                    <rect key="frame" x="12" y="7" width="60" height="25"/>
+                    <rect key="frame" x="12" y="8" width="60" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="Igj-BO-kWj"/>
                         <constraint firstAttribute="width" constant="60" id="OcU-Jq-Dk3"/>
@@ -693,7 +692,7 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yXT-88-gO1" customClass="LoginButton" customModule="iTrain" customModuleProvider="target">
-                    <rect key="frame" x="818" y="7" width="60" height="25"/>
+                    <rect key="frame" x="818" y="8" width="60" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="LZa-AR-v9w"/>
                         <constraint firstAttribute="height" constant="25" id="QGF-bR-ZTF"/>
